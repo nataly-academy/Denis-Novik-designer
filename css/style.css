@@ -1,0 +1,331 @@
+/*общие стили*/
+
+body {
+    width: 1445px;
+    height: 4759px;
+
+    font-family: "Roboto", sans-serif;
+    background: #FFFFFF;
+    color: #070707;
+}
+
+.topbutton {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    z-index: 99;
+    border: none;
+    outline: none;
+}
+
+.topbutton:hover {
+    opacity: 0.8;
+}
+
+.content-container {
+    width: 943px;
+    margin: 0 auto;
+}
+
+.content-container-medium {
+    width: 486px;
+    margin: 0 auto;
+}
+
+.content-container-small {
+    width: 343px;
+    margin: 0 551px 0 552px;
+    padding: 80px 0 120px 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #828282;
+}
+
+a:hover {
+    color: #ff0606;
+}
+
+a:focus, 
+a:active {
+    opacity: 0.5;
+}
+
+a img:hover, 
+.button:hover {
+    opacity: 0.8;
+}
+
+.button:active {
+    opacity: 0.5;
+}
+
+/*стили для header*/
+
+.main-nav {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    border-bottom: 1px solid #828282;
+}
+
+.nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 32px 0;
+    padding: 0;
+}
+
+.list-item-black a {
+    color: #070707;
+}
+
+/*стили для presentation*/
+
+.presentation-description {
+    display: grid;
+    grid-template-columns: 125px auto 100px;
+    grid-template-rows: 190px;
+    column-gap: 200px;
+    margin: 0;
+}
+
+.presentation-description-title h1 {
+    grid-column: 1;
+
+    width: 124px;
+    height: 119px;
+    margin: 31px 0 30px;
+    padding: 0;
+
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+}
+
+.presentation-description-text p {
+    grid-column: 2;
+
+    width: 156px;
+    height: 45px;
+    text-align: center;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+
+    margin: auto;
+    padding: 93px 20px 10px;
+}
+
+.presentation-description-link {
+    grid-column: 3;
+
+    display: flex;
+    flex-direction: column;
+
+    transform: rotate(-90deg);
+    width: 65px;
+    height: 20px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+
+    margin: 93px 0 0;
+    padding: 0 42px;
+}
+
+a.black-link {
+    color: #070707;
+}
+
+.presentation {
+    margin-bottom: 104px;
+}
+
+/*стили для about-me*/
+
+.about-me {
+    height: 506px;
+    background-color: #F6F6F6;
+    margin: 0;
+}
+
+.content-container-medium {
+    text-align: center;
+    margin: 0 auto;
+    padding: 88px 0 50px;
+}
+
+.about-me h2 {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 42px;
+    margin: 0;
+    padding: 28px 0 22px;
+
+}
+
+.about-me-text p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    margin: 0;
+    padding: 0 0 43px;
+}
+
+/*стили для skills*/
+
+.skills {
+    padding: 86px 0 104px;
+}
+
+.skills h2 {
+    text-align: center;
+
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 42px;
+
+    margin: 0 0 55px;
+}
+
+.skills p {
+    text-align: center;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    margin: 0 0 90px;
+}
+
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(4, 169px);
+    gap: 90px;
+    margin: 0 249px 0 250px;
+    padding: 0;
+}
+
+.list-item {
+    text-align: center;
+}
+
+li.list-item p {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+
+    margin: 0 0 50px;
+}
+
+.list-item.photoshop img.list-item-icon {
+    background: radial-gradient(75.99% 75.64% at 32.94% 22.44%, rgba(52, 54, 78, 0.98) 0%, #0C0824 100%);
+    margin-bottom: 20px;
+}
+
+.list-item.illustrator img.list-item-icon {
+    background: radial-gradient(76% 75.63% at 32.97% 22.44%, rgba(66, 51, 37, 0.98) 0%, #1C0A00 100%);
+    margin-bottom: 20px;
+}
+
+.list-item.after-effects img.list-item-icon {
+    background: radial-gradient(76% 75.63% at 32.97% 22.42%, rgba(68, 47, 85, 0.98) 0%, #12002C 100%);
+    margin-bottom: 20px;
+}
+
+.list-item.figma img.list-item-icon {
+    background: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+/*стили для portfolio*/
+
+.portfolio {
+    height: 2253px;
+    background: #F6F6F6;
+    margin: 0;
+}
+
+.portfolio h2 {
+    text-align: center;
+    margin: 0;
+    padding: 110px 0 52px;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 42px;
+}
+
+.portfolio-block img {
+    margin: 0 251px 0 258px;
+}
+
+.portfolio p {
+    text-align: center;
+    margin: 40px 0 99px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration-line: underline;
+}
+
+/*стили для page-footer*/
+
+.page-footer {
+    height: 622px;
+}
+
+.contacts h2 {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 42px;
+    text-align: center;
+    margin: 30px 0 24px;
+}
+
+.contacts p.contacts-chat {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    margin: 0 0 32px;
+    padding: 0;
+}
+
+.contacts .button {
+    width: 181px;
+    height: 45px;
+    border-radius: 40px;
+    border: none;
+    margin: 0 82px 86px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    background: #070707;
+    color: #FFFFFF;
+}
+
+.contacts-list-icon {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.contacts p.contacts-like {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    margin: 39px 0 123px;
+}
